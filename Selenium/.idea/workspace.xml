@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62bca1d7-b3a7-4693-b062-e7b613a96762" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1iWZc0flBIgk0FcXKveJoNmUUZJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62bca1d7-b3a7-4693-b062-e7b613a96762" name="Default Changelist" comment="" />
+      <created>1602025383031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602025383031</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1865" y="-205" key="FileChooserDialogImpl" timestamp="1602025509666">
+      <screen x="1366" y="-391" width="1440" height="860" />
+    </state>
+    <state x="1865" y="-205" key="FileChooserDialogImpl/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1602025509666" />
+    <state x="1468" y="-258" key="new project wizard" timestamp="1602025516297">
+      <screen x="1366" y="-391" width="1440" height="860" />
+    </state>
+    <state x="1468" y="-258" key="new project wizard/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1602025516297" />
+  </component>
+</project>
