@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="62bca1d7-b3a7-4693-b062-e7b613a96762" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AppSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppSelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AppSelenium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppSelenium.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Aulas/Projeto Arquitetura/Spring_01" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SeleniumTest">
     <configuration name="AppSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppSelenium" />
       <module name="Selenium" />
@@ -47,8 +49,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="Test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.Test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="Test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SeleniumTest" />
+        <item itemvalue="JUnit.SeleniumTest.Test2" />
+        <item itemvalue="JUnit.SeleniumTest.Test1" />
         <item itemvalue="Application.AppSelenium" />
       </list>
     </recent_temporary>
@@ -72,26 +106,30 @@
     </state>
     <state x="1865" y="-205" key="FileChooserDialogImpl/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1602025509666" />
     <state x="473" y="157" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602168848683" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1602169533574">
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom" timestamp="1602633949589">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602028531677" />
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1602169533574">
+    <state width="1323" height="99" key="GridCell.Tab.0.center" timestamp="1602633949589">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602028531677" />
+    <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1602169533574">
+    <state width="1323" height="99" key="GridCell.Tab.0.left" timestamp="1602633949589">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602028531677" />
+    <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1602169533574">
+    <state width="1323" height="99" key="GridCell.Tab.0.right" timestamp="1602633949589">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602028531677" />
+    <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1602624889023">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602624889023" />
     <state x="1468" y="-258" key="new project wizard" timestamp="1602025516297">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>

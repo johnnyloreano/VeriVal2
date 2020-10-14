@@ -1,20 +1,14 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AppSelenium {
-    public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\John Peter\\Desktop\\VeriVal2\\Selenium\\chromedriver_win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        String baseUrl = "http://google.com.br";
+    public static void main(String[] args) throws InterruptedException {
 
-        driver.get(baseUrl);
-
-
-        WebElement searchBar = driver.findElement(By.name("q"));
-
-        System.out.println(searchBar);
-        driver.close();
     }
 }
