@@ -20,4 +20,9 @@ public class Medico {
     public String getEspecialidade(){
         return this.especialidade;
     }
+
+    @Override
+    public String toString(){
+        return "Nome: "+this.nome+"     especialidade: "+this.especialidade+"     CRM: "+this.crm;
+    }
 }

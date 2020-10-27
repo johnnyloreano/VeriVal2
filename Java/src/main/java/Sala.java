@@ -73,4 +73,9 @@ public class Sala {
         }
         else System.out.println("Valor inválido!");
     }
+
+    @Override
+    public String toString(){
+        return "Nome: "+this.nome+"     Tipo: "+this.tipo+"     Custo por hora: "+this.getCustoPorH();
+    }
 }

@@ -10,9 +10,12 @@ public class Alocacao {
     private static final int MAXH = 22;//hora da qual nao se pode alocar salas depois.
 
     public Alocacao(Medico responsavel, Sala sala, Date inicio, Date fim){
-        if(checaMesmoDia(inicio,fim) && checaHorarioMinMax(inicio,fim) && checaTempoMinimo(sala, inicio, fim) && Main.horarioDisponivel(sala,inicio,fim)){
+        if(checaMesmoDia(inicio,fim) && checaHorarioMinMax(inicio,fim) && 
+        checaTempoMinimo(sala, inicio, fim) && Main.horarioDisponivel(sala,inicio,fim) &&
+        checaMedicoTipoSala(responsavel, sala)){
             /*se as datas de inicio e fim respeitam as regras de serem do mesmo dia, nao ser antes das 6,
-            nao ser depois das 22 e respeitam o limite de tempo minimo a ser locado, cria o objeto*/
+            nao ser depois das 22, se o horario ja nao esta reservado, se o tempo minimo de locacao eh 
+            respeitado e se o medico tem permissao de locar esse tipo de sala, cria o objeto*/
             this.responsavel = responsavel;
             this.sala = sala;
             this.inicio = inicio;
@@ -20,8 +23,29 @@ public class Alocacao {
             custo = calcultaCusto();     
         }
         else{
-            System.out.println("Datas ou horarios invalidos");
+            System.out.println("Horario indisponivel ou o medico nao pode locar salas deste tipo.");
         }
+    }
+
+    private boolean checaMedicoTipoSala(Medico responsavel, Sala sala){
+        /**Metodo que checa se o medico cumpre as regras "Cirurgiões
+        cardiovasculares e neurologistas somente poderão fazer reservas de salas 
+        grandes ou de altorisco" e "Dermatologistas somente poderão fazer reservas de salas pequenas".
+         * @param Medico responsavel, responsavel pela locacao
+         * @param Sala sala, sala a ser locada
+         * @return boolean, indica se o medico respeitou a regra de tipo de sala por especialidade
+         */
+        if(responsavel.getEspecialidade().equalsIgnoreCase("dermatologista")){
+            if(sala.getTipo().equalsIgnoreCase("pequena"))return true;
+            else return false;
+        }
+        else if(responsavel.getEspecialidade().equalsIgnoreCase("cirurgiao cardiovascular") ||
+        responsavel.getEspecialidade().equalsIgnoreCase("neurologista")){
+            if(sala.getTipo().equalsIgnoreCase("grande") ||
+            sala.getTipo().equalsIgnoreCase("alto-risco")) return true;
+            else return false;
+        }
+        return true;
     }
 
     private boolean checaHorarioMinMax(Date inicio, Date fim){
@@ -80,5 +104,11 @@ public class Alocacao {
     }
     public void alteraCusto(){
         custo=calcultaCusto();
+    }
+
+    @Override
+    public String toString(){
+        return "ALOCACAO:" + "\n Medico responsavel: " + this.responsavel+"\n Sala: " + this.sala
+        + "\n Data de inicio: " + this.inicio + "\n Data de termino: "+this.fim;
     }
 }
