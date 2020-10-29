@@ -52,21 +52,21 @@ public class Sala {
         return this.tempoMinimoReservaH;
     }
 
-    public void setCustoPorHPequena(double valor){
+    public static void setCustoPorHPequena(double valor){
         if(valor>0){
             custoPorHPequena = valor;
             Main.atualizaAlocacoes();
         }
         else System.out.println("Valor inválido!");
     }
-    public void setCustoPorHGrande(double valor){
+    public static void setCustoPorHGrande(double valor){
         if(valor>0){
             custoPorHGrande = valor;
             Main.atualizaAlocacoes();
         }
         else System.out.println("Valor inválido!");
     }
-    public void setCustoPorHAltoRisco(double valor){
+    public static void setCustoPorHAltoRisco(double valor){
         if(valor>0){
             custoporHAltoRisco = valor;
             Main.atualizaAlocacoes();

@@ -23,7 +23,7 @@ public class Alocacao {
             custo = calcultaCusto();     
         }
         else{
-            System.out.println("Horario indisponivel ou o medico nao pode locar salas deste tipo.");
+            throw new IllegalArgumentException();
         }
     }
 
