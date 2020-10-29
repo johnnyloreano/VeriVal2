@@ -37,7 +37,7 @@ public class AlocacaoSalaIntTest {
     }
 
     @Test
-    public void checaMedicoTipoSalaTest1() {
+    public void getSalaTest3() {
         medico=mock(Medico.class);
         when(medico.getEspecialidade()).thenReturn("neurologista");
         sala= new Sala("gama","Grande");
@@ -45,55 +45,9 @@ public class AlocacaoSalaIntTest {
         fim=new Date(2020,9,11,20,20);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals(alocacao.checaMedicoTipoSala(medico,sala),true);
+        assertEquals(alocacao.getSala().getCustoPorH(),650.0);
     }
 
-    @Test
-    public void checaMedicoTipoSalaTest2() {
-        medico=mock(Medico.class);
-        when(medico.getEspecialidade()).thenReturn("neurologista");
-        sala= new Sala("gama","alto-risco");
-        inicio=new Date(2020,9,11,11,40);
-        fim=new Date(2020,9,11,20,20);
-        alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals(alocacao.checaMedicoTipoSala(medico,sala),true);
-    }
-
-    @Test
-    public void checaMedicoTipoSalaTest3() {
-        medico=mock(Medico.class);
-        when(medico.getEspecialidade()).thenReturn("neurologista");
-        sala= new Sala("gama","pequena");
-        inicio=new Date(2020,9,11,11,40);
-        fim=new Date(2020,9,11,20,20);
-        alocacao=new Alocacao(medico,sala,inicio,fim);
-
-        assertEquals(alocacao.checaMedicoTipoSala(medico,sala),false);
-    }
-
-    @Test
-    public void checaTempoMinimoTest1() {
-        medico=mock(Medico.class);
-        when(medico.getEspecialidade()).thenReturn("neurologista");
-        sala= new Sala("gama","alto-risco");
-        inicio=new Date(2020,9,11,11,40);
-        fim=new Date(2020,9,11,20,20);
-        alocacao=new Alocacao(medico,sala,inicio,fim);
-
-        assertEquals(alocacao.checaTempoMinimo(sala,inicio,fim),true);
-    }
-
-    @Test
-    public void checaTempoMinimoTest2() {
-        medico=mock(Medico.class);
-        when(medico.getEspecialidade()).thenReturn("neurologista");
-        sala= new Sala("gama","alto-risco");
-        inicio=new Date(2020,9,11,11,40);
-        fim=new Date(2020,9,11,13,42);
-        alocacao=new Alocacao(medico,sala,inicio,fim);
-
-        assertEquals(alocacao.checaTempoMinimo(sala,inicio,fim),false);
-    }
 
 }

@@ -47,40 +47,5 @@ public class AlocacaoMedicoIntTest {
         assertEquals(alocacao.getResponsavel().getEspecialidade(),"dermatologista");
     }
 
-    @Test
-    public void checaMedicoTipoSalaTest1() {
-        sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("pequena");
-        medico=new Medico("527383","Cleiton Silva","dermatologista");
-        inicio=new Date(2020,10,14,19,30);
-        fim=new Date(2020,10,14,21,50);
-        alocacao=new Alocacao(medico,sala,inicio,fim);
-
-        assertEquals(alocacao.checaMedicoTipoSala(medico,sala),true);
-    }
-
-    @Test
-    public void checaMedicoTipoSalaTest2() {
-        sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("grande");
-        medico=new Medico("527383","Cleiton Silva","dermatologista");
-        inicio=new Date(2020,10,14,19,30);
-        fim=new Date(2020,10,14,21,50);
-        alocacao=new Alocacao(medico,sala,inicio,fim);
-
-        assertEquals(alocacao.checaMedicoTipoSala(medico,sala),false);
-    }
-
-    @Test
-    public void checaMedicoTipoSalaTest3() {
-        sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("alto-risco");
-        medico=new Medico("527383","Cleiton Silva","dermatologista");
-        inicio=new Date(2020,10,14,19,30);
-        fim=new Date(2020,10,14,21,50);
-        alocacao=new Alocacao(medico,sala,inicio,fim);
-
-        assertEquals(alocacao.checaMedicoTipoSala(medico,sala),false);
-    }
 
 }
