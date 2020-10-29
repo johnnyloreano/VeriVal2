@@ -27,7 +27,7 @@ public class Alocacao {
         }
     }
 
-    private boolean checaMedicoTipoSala(Medico responsavel, Sala sala){
+    public boolean checaMedicoTipoSala(Medico responsavel, Sala sala){
         /**Metodo que checa se o medico cumpre as regras "Cirurgiões
         cardiovasculares e neurologistas somente poderão fazer reservas de salas 
         grandes ou de altorisco" e "Dermatologistas somente poderão fazer reservas de salas pequenas".
@@ -67,7 +67,7 @@ public class Alocacao {
         return inicio.getYear()==fim.getYear() && inicio.getMonth()==fim.getMonth() && inicio.getDay()==fim.getDay();
     }
 
-    private boolean checaTempoMinimo(Sala sala, Date inicio, Date fim){
+    public boolean checaTempoMinimo(Sala sala, Date inicio, Date fim){
         /**Metodo que checa se a locacao respeita o limite de tempo minimo para locacoes de acordo com o seu tipo
          * de sala.
          * @param Date inicio, data do inicio da locacao
