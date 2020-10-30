@@ -2,3 +2,6 @@
 [1013/192655.319:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: O comprimento do registro de informações especificado não coincide com o comprimento necessário à classe de informações especificada. (0xc0000004)
 [1013/193539.779:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [1013/205852.890:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1029/175402.750:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1029/182954.089:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1029/185853.321:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
