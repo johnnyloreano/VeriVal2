@@ -68,7 +68,7 @@ public class Main {
                 for igual ao fim da alocacao. Significa que os dois intervalos de tempo se sobrepoem pelo 
                 menos parcialmente, ou seja os dois coexistem, entao a alocacao esta no intervalo de tempo
                 desejado pelo usuario e deve ser printada.*/
-                if(a.getInicio().after(i) || a.getFim().before(f) ||
+                if((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
                 a.getInicio().equals(i) || a.getFim().equals(f)) System.out.println(a);
             }
         }
