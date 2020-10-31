@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="62bca1d7-b3a7-4693-b062-e7b613a96762" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppSelenium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AppSelenium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppSelenium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SeleniumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SeleniumTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="SeleniumTest" />
+    </enabled-run-configurations>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -78,9 +83,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeleniumTest.TestQuestionCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="TestQuestionCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SeleniumTest" />
+        <item itemvalue="JUnit.SeleniumTest.TestQuestionCreate" />
         <item itemvalue="JUnit.SeleniumTest.Test2" />
         <item itemvalue="JUnit.SeleniumTest.Test1" />
         <item itemvalue="Application.AppSelenium" />
@@ -106,33 +122,46 @@
     </state>
     <state x="1865" y="-205" key="FileChooserDialogImpl/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1602025509666" />
     <state x="473" y="157" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602168848683" />
-    <state width="1323" height="99" key="GridCell.Tab.0.bottom" timestamp="1602633949589">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1397" height="157" key="GridCell.Tab.0.bottom" timestamp="1604102291992">
+      <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
-    <state width="1323" height="99" key="GridCell.Tab.0.center" timestamp="1602633949589">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1397" height="157" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602638831483" />
+    <state width="1397" height="157" key="GridCell.Tab.0.center" timestamp="1604102291992">
+      <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
-    <state width="1323" height="99" key="GridCell.Tab.0.left" timestamp="1602633949589">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1397" height="157" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
+    <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602638831481" />
+    <state width="1397" height="157" key="GridCell.Tab.0.left" timestamp="1604102291992">
+      <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
-    <state width="1323" height="99" key="GridCell.Tab.0.right" timestamp="1602633949589">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1397" height="157" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
+    <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602638831481" />
+    <state width="1397" height="157" key="GridCell.Tab.0.right" timestamp="1604102291992">
+      <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602169533574" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1602624889023">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1397" height="157" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
+    <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602638831481" />
+    <state x="1766" y="-168" key="com.intellij.ide.util.TipDialog" timestamp="1604098118176">
+      <screen x="1366" y="-391" width="1440" height="860" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602624889023" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1603839958061" />
+    <state x="1766" y="-168" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604098118176" />
+    <state x="1895" y="-43" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604008022140">
+      <screen x="1366" y="-391" width="1440" height="860" />
+    </state>
+    <state x="1895" y="-43" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604008022140" />
     <state x="1468" y="-258" key="new project wizard" timestamp="1602025516297">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state x="1468" y="-258" key="new project wizard/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1602025516297" />
+    <state x="1742" y="0" key="run.anything.popup" timestamp="1603841844575">
+      <screen x="1366" y="-391" width="1440" height="860" />
+    </state>
+    <state x="1742" y="0" key="run.anything.popup/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1603841844575" />
   </component>
 </project>
