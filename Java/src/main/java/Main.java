@@ -64,12 +64,11 @@ public class Main {
         if(dataValida){
             for(Alocacao a:alocacoes){
                 /*Se o inicio da alocacao for depois do inicio da busca ou se o fim da alocacao for
-                antes do fim da busca ou se o inicio for igual ao inicio da alocao ou se o fim 
-                for igual ao fim da alocacao. Significa que os dois intervalos de tempo se sobrepoem pelo 
+                antes do fim da busca ou se o inicio for igual ao inicio da alocao ou se o fim
+                for igual ao fim da alocacao. Significa que os dois intervalos de tempo se sobrepoem pelo
                 menos parcialmente, ou seja os dois coexistem, entao a alocacao esta no intervalo de tempo
                 desejado pelo usuario e deve ser printada.*/
-                if((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
-                a.getInicio().equals(i) || a.getFim().equals(f)) System.out.println(a);
+                if(checaCoincideHorario(a,i,f)) System.out.println(a);
             }
         }
         triggerVoltarParaOMenu();
@@ -163,6 +162,13 @@ public class Main {
         triggerVoltarParaOMenu();
     }
 
+    private static boolean checaCoincideHorario(Alocacao a, Date i, Date f){
+        //retorna true se a alocacao 'a' estiver completa ou parcialmente dentro do intervalo de tempo de i a f.
+        if((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
+                a.getInicio().equals(i) || a.getFim().equals(f)) return true;
+        return false;
+    }
+
     private static double inputDouble(double min, double max, String msg){
         double ret=0;
         do{
@@ -174,7 +180,7 @@ public class Main {
                 System.out.println("O sistema esperava um double, mas o usuario passou outro tipo.");
                 ret=min-1;
             }
-            
+
         }while(ret<min || ret>max);
         return ret;
     }
@@ -198,8 +204,8 @@ public class Main {
         Date d = new Date();
         try{
             d = criarData(Integer.parseInt(data.substring(0,4)),Integer.parseInt(data.substring(5,7)),
-            Integer.parseInt(data.substring(8,10)),Integer.parseInt(data.substring(11,13)),
-            Integer.parseInt(data.substring(14,16)));
+                    Integer.parseInt(data.substring(8,10)),Integer.parseInt(data.substring(11,13)),
+                    Integer.parseInt(data.substring(14,16)));
         }
         catch(Exception e){
             System.out.println("Data invalida");
@@ -270,7 +276,7 @@ public class Main {
                 System.out.println("O sistema esperava um inteiro, mas o usuario passou outro tipo.");
                 ret=min-1;
             }
-            
+
         }while(ret<min || ret>max);
         return ret;
     }
@@ -286,27 +292,10 @@ public class Main {
         for (Alocacao a:alocacoes){
             if(sala.getNome().equalsIgnoreCase(a.getSala().getNome())){
                 //se for a mesma sala
-                if(a.getInicio().getYear()==inicio.getYear() && a.getInicio().getMonth()==inicio.getMonth() && 
-                a.getInicio().getDay()==inicio.getDay()){
+                if(a.getInicio().getYear()==inicio.getYear() && a.getInicio().getMonth()==inicio.getMonth() &&
+                        a.getInicio().getDay()==inicio.getDay()){
                     //se for no mesmo dia
-                    int aInicio = a.getInicio().getHours()*60 + a.getInicio().getMinutes();
-                    int aFim = a.getFim().getHours()*60 + a.getFim().getMinutes();
-                    if(mainInicio<aFim && mainInicio>aInicio){
-                        /*se o inicio pretendido for menor que algum fim, e maior que o inicio desse fim
-                         significa que o horario esta indisponivel pois o inicio do horario pretendido
-                         ocupa o fim de algum horario ja registrado*/
-                         return false;
-                    }
-                    if(mainFim>aInicio && mainFim<aFim){
-                        /*se o fim pretendido for maior que algum inicio, e menor que o fim desse inicio
-                        significa que o fim do horario pretendido ocupa algum horario ja registrado */
-                        return false;
-                    }
-                    if(mainInicio==aInicio || mainFim==aFim){
-                        //significa que queremos ocupar a sala em um momento em que ja esta ocupada
-                        return false;
-                    }
-
+                    if(checaCoincideHorario(a, inicio, fim)) return false;
                 }
             }
         }

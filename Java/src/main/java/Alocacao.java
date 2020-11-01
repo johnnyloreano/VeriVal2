@@ -95,8 +95,10 @@ public class Alocacao {
         return this.fim;
     }
     private double calcultaCusto(){
+
         int inicioMinutos = inicio.getHours()*60 + inicio.getMinutes();
         int fimMinutos = fim.getHours()*60 + fim.getMinutes();
+        double resultado=0;
         return ((fimMinutos-inicioMinutos)/60.0) * sala.getCustoPorH();
     }
     public double getCusto(){

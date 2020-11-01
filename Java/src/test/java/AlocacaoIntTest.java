@@ -18,8 +18,8 @@ public class AlocacaoIntTest {
         fim = new Date(2020, 12, 10, 19, 20);
         alocacao = new Alocacao(medico, sala, inicio, fim);
 
-        assertEquals("ALOCACAO:" + "\n Medico responsavel: " + medico+"\n Sala: " + sala
-                + "\n Data de inicio: " + inicio + "\n Data de termino: "+fim,alocacao.toString());
+        assertEquals(alocacao.toString(),"ALOCACAO:" + "\n Medico responsavel: " + medico+"\n Sala: " + sala
+                + "\n Data de inicio: " + inicio + "\n Data de termino: "+fim);
     }
 
     @Test
@@ -30,8 +30,8 @@ public class AlocacaoIntTest {
         fim = new Date(2020, 12, 10, 19, 20);
         alocacao = new Alocacao(medico, sala, inicio, fim);
 
-        assertEquals("ALOCACAO:" + "\n Medico responsavel: " + medico+"\n Sala: " + sala
-                + "\n Data de inicio: " + inicio + "\n Data de termino: "+fim,alocacao.toString());
+        assertEquals(alocacao.toString(),"ALOCACAO:" + "\n Medico responsavel: " + medico+"\n Sala: " + sala
+                + "\n Data de inicio: " + inicio + "\n Data de termino: "+fim);
     }
 
     @Test
@@ -42,8 +42,8 @@ public class AlocacaoIntTest {
         fim = new Date(2020, 12, 10, 19, 20);
         alocacao = new Alocacao(medico, sala, inicio, fim);
 
-        assertEquals("ALOCACAO:" + "\n Medico responsavel: " + medico+"\n Sala: " + sala
-                + "\n Data de inicio: " + inicio + "\n Data de termino: "+fim,alocacao.toString());
+        assertEquals(alocacao.toString(),"ALOCACAO:" + "\n Medico responsavel: " + medico+"\n Sala: " + sala
+                + "\n Data de inicio: " + inicio + "\n Data de termino: "+fim);
     }
 
 }

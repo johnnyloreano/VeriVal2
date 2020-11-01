@@ -20,7 +20,7 @@ public class AlocacaoMedicoIntTest {
         fim=new Date(2020,10,14,21,50);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("Cleiton Silva",alocacao.getResponsavel().getNome());
+        assertEquals(alocacao.getResponsavel().getNome(),"Cleiton Silva");
     }
 
     @Test
@@ -32,7 +32,7 @@ public class AlocacaoMedicoIntTest {
         fim=new Date(2020,10,14,21,50);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("527383",alocacao.getResponsavel().getCrm());
+        assertEquals(alocacao.getResponsavel().getCrm(),"527383");
     }
 
     @Test
@@ -44,7 +44,7 @@ public class AlocacaoMedicoIntTest {
         fim=new Date(2020,10,14,21,50);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("dermatologista",alocacao.getResponsavel().getEspecialidade());
+        assertEquals(alocacao.getResponsavel().getEspecialidade(),"dermatologista");
     }
 
 

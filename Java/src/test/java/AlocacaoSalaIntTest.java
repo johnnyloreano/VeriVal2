@@ -21,7 +21,7 @@ public class AlocacaoSalaIntTest {
         fim=new Date(2020,9,11,20,20);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("gama",alocacao.getSala().getNome());
+        assertEquals(alocacao.getSala().getNome(),"gama");
     }
 
     @Test
@@ -33,7 +33,7 @@ public class AlocacaoSalaIntTest {
         fim=new Date(2020,9,11,20,20);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("Grande",alocacao.getSala().getTipo());
+        assertEquals(alocacao.getSala().getTipo(),"Grande");
     }
 
     @Test
@@ -45,7 +45,7 @@ public class AlocacaoSalaIntTest {
         fim=new Date(2020,9,11,20,20);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals(650.0,alocacao.getSala().getCustoPorH());
+        assertEquals(alocacao.getSala().getCustoPorH(),650.0);
     }
 
 
