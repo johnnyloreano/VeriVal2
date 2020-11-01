@@ -5,7 +5,7 @@ import java.util.Date;
 import static junit.framework.TestCase.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-public class AlocacaoMedicoIntTest {
+public class AlocacaoMedicoUnitTest {
     private static Date inicio,fim;
     private static Medico medico;
     private static Sala sala;
@@ -13,14 +13,14 @@ public class AlocacaoMedicoIntTest {
 
     @Test
     public void getResponsavelNomeTest1() {
-    sala=mock(Sala.class);
+        sala=mock(Sala.class);
         when(sala.getTipo()).thenReturn("pequena");
         medico=new Medico("527383","Cleiton Silva","dermatologista");
         inicio=new Date(2020,10,14,19,30);
         fim=new Date(2020,10,14,21,50);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("Cleiton Silva",alocacao.getResponsavel().getNome());
+        assertEquals(alocacao.getResponsavel().getNome(),"Cleiton Silva");
     }
 
     @Test
@@ -32,7 +32,7 @@ public class AlocacaoMedicoIntTest {
         fim=new Date(2020,10,14,21,50);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("527383",alocacao.getResponsavel().getCrm());
+        assertEquals(alocacao.getResponsavel().getCrm(),"527383");
     }
 
     @Test
@@ -44,7 +44,7 @@ public class AlocacaoMedicoIntTest {
         fim=new Date(2020,10,14,21,50);
         alocacao=new Alocacao(medico,sala,inicio,fim);
 
-        assertEquals("dermatologista",alocacao.getResponsavel().getEspecialidade());
+        assertEquals(alocacao.getResponsavel().getEspecialidade(),"dermatologista");
     }
 
 

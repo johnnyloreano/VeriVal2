@@ -4,7 +4,8 @@ import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-public class AlocacaoUniTest {
+
+public class AlocacaoFuncTest {
     private static Date inicio,fim,inicio2,fim2;
     private static Medico medico,medico2;
     private static Sala sala,sala2;
@@ -93,14 +94,14 @@ public class AlocacaoUniTest {
     @Test(expected = IllegalArgumentException.class)
     public void excecaoTest8() {
         sala=mock(Sala.class);
-    when(sala.getTipo()).thenReturn("grande");
-    when(sala.getNome()).thenReturn("gama");
-    when(sala.getTempoMinimoReservaH()).thenReturn(3);
-    medico=mock(Medico.class);
-    when(medico.getEspecialidade()).thenReturn("neurologista");
+        when(sala.getTipo()).thenReturn("grande");
+        when(sala.getNome()).thenReturn("gama");
+        when(sala.getTempoMinimoReservaH()).thenReturn(3);
+        medico=mock(Medico.class);
+        when(medico.getEspecialidade()).thenReturn("neurologista");
         when(medico.getNome()).thenReturn("Letinho de Mãe");
-    inicio=new Date(2020,10,14,19,30);
-    fim=new Date(2020,10,14,21,45);
+        inicio=new Date(2020,10,14,19,30);
+        fim=new Date(2020,10,14,21,45);
         new Alocacao(medico,sala,inicio,fim);
 
         sala2=mock(Sala.class);
@@ -115,7 +116,7 @@ public class AlocacaoUniTest {
         new Alocacao(medico,sala,inicio,fim);
     }
 
-  /*  @Test(expected = IllegalArgumentException.class)
+    /* @Test(expected = IllegalArgumentException.class)
     public void excecaoTest9() {
         sala=mock(Sala.class);
         when(sala.getTipo()).thenReturn("grande");
@@ -138,7 +139,7 @@ public class AlocacaoUniTest {
         inicio2=new Date(2020,10,14,10,23);
         fim2=new Date(2020,10,14,20,48);
         new Alocacao(medico,sala,inicio,fim);
-    }*/
+    } */
 
     @Test(expected = IllegalArgumentException.class)
     public void excecaoTest10() {
