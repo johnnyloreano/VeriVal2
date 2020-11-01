@@ -11,7 +11,7 @@ public class Alocacao {
 
     public Alocacao(Medico responsavel, Sala sala, Date inicio, Date fim){
         if(checaMesmoDia(inicio,fim) && checaHorarioMinMax(inicio,fim) && 
-        checaTempoMinimo(sala, inicio, fim) && Main.horarioDisponivel(sala,inicio,fim) &&
+        checaTempoMinimo(sala, inicio, fim) && Main.horarioDisponivel(sala,responsavel,inicio,fim) &&
         checaMedicoTipoSala(responsavel, sala)){
             /*se as datas de inicio e fim respeitam as regras de serem do mesmo dia, nao ser antes das 6,
             nao ser depois das 22, se o horario ja nao esta reservado, se o tempo minimo de locacao eh 
@@ -95,10 +95,8 @@ public class Alocacao {
         return this.fim;
     }
     private double calcultaCusto(){
-
         int inicioMinutos = inicio.getHours()*60 + inicio.getMinutes();
         int fimMinutos = fim.getHours()*60 + fim.getMinutes();
-        double resultado=0;
         return ((fimMinutos-inicioMinutos)/60.0) * sala.getCustoPorH();
     }
     public double getCusto(){

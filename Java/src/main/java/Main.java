@@ -64,8 +64,8 @@ public class Main {
         if(dataValida){
             for(Alocacao a:alocacoes){
                 /*Se o inicio da alocacao for depois do inicio da busca ou se o fim da alocacao for
-                antes do fim da busca ou se o inicio for igual ao inicio da alocao ou se o fim
-                for igual ao fim da alocacao. Significa que os dois intervalos de tempo se sobrepoem pelo
+                antes do fim da busca ou se o inicio for igual ao inicio da alocao ou se o fim 
+                for igual ao fim da alocacao. Significa que os dois intervalos de tempo se sobrepoem pelo 
                 menos parcialmente, ou seja os dois coexistem, entao a alocacao esta no intervalo de tempo
                 desejado pelo usuario e deve ser printada.*/
                 if(checaCoincideHorario(a,i,f)) System.out.println(a);
@@ -165,7 +165,7 @@ public class Main {
     private static boolean checaCoincideHorario(Alocacao a, Date i, Date f){
         //retorna true se a alocacao 'a' estiver completa ou parcialmente dentro do intervalo de tempo de i a f.
         if((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
-                a.getInicio().equals(i) || a.getFim().equals(f)) return true;
+            a.getInicio().equals(i) || a.getFim().equals(f)) return true;
         return false;
     }
 
@@ -180,7 +180,7 @@ public class Main {
                 System.out.println("O sistema esperava um double, mas o usuario passou outro tipo.");
                 ret=min-1;
             }
-
+            
         }while(ret<min || ret>max);
         return ret;
     }
@@ -204,8 +204,8 @@ public class Main {
         Date d = new Date();
         try{
             d = criarData(Integer.parseInt(data.substring(0,4)),Integer.parseInt(data.substring(5,7)),
-                    Integer.parseInt(data.substring(8,10)),Integer.parseInt(data.substring(11,13)),
-                    Integer.parseInt(data.substring(14,16)));
+            Integer.parseInt(data.substring(8,10)),Integer.parseInt(data.substring(11,13)),
+            Integer.parseInt(data.substring(14,16)));
         }
         catch(Exception e){
             System.out.println("Data invalida");
@@ -276,7 +276,7 @@ public class Main {
                 System.out.println("O sistema esperava um inteiro, mas o usuario passou outro tipo.");
                 ret=min-1;
             }
-
+            
         }while(ret<min || ret>max);
         return ret;
     }
@@ -286,14 +286,15 @@ public class Main {
         return new Date(y-1900,m-1,d,h,mi);
     }
 
-    public static boolean horarioDisponivel(Sala sala, Date inicio, Date fim){
+    public static boolean horarioDisponivel(Sala sala, Medico responsavel, Date inicio, Date fim){
         int mainInicio = inicio.getHours()*60 + inicio.getMinutes();
         int mainFim = fim.getHours()*60 + fim.getMinutes();
         for (Alocacao a:alocacoes){
-            if(sala.getNome().equalsIgnoreCase(a.getSala().getNome())){
-                //se for a mesma sala
-                if(a.getInicio().getYear()==inicio.getYear() && a.getInicio().getMonth()==inicio.getMonth() &&
-                        a.getInicio().getDay()==inicio.getDay()){
+            if(sala.getNome().equalsIgnoreCase(a.getSala().getNome()) || 
+                responsavel.getCrm().equalsIgnoreCase(a.getResponsavel().getCrm())){
+                //se for a mesma sala ou se for o mesmo medico
+                if(a.getInicio().getYear()==inicio.getYear() && a.getInicio().getMonth()==inicio.getMonth() && 
+                a.getInicio().getDay()==inicio.getDay()){
                     //se for no mesmo dia
                     if(checaCoincideHorario(a, inicio, fim)) return false;
                 }
