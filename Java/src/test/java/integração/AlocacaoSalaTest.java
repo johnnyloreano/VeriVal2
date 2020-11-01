@@ -6,7 +6,7 @@ import static junit.framework.TestCase.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class AlocacaoSalaUnitTest {
+public class AlocacaoSalaTest {
     private static Date inicio,fim;
     private static Medico medico;
     private static Sala sala;

@@ -1,41 +1,66 @@
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertTrue;
 import static junit.framework.TestCase.assertEquals;
-public class SalaUnitTest {
-
+public class SalaTest {
+    private static Sala sala;
     @Test
-    public void getNome() {
+    public void getNomeTest() {
         Sala sala = new Sala("Gama","Grande");
 
         assertEquals("Gama",sala.getNome());
     }
 
     @Test
-    public void getTipo() {
+    public void getTipoTest() {
         Sala sala = new Sala("Gama","Grande");
 
         assertEquals("Grande",sala.getTipo());
     }
 
     @Test
-    public void getCustoPorH() {
-        Sala sala;
+    public void validaTempoMinimoGrandeTest() {
         sala=new Sala("Gama","Grande");
-        assertTrue( sala.getCustoPorH() > 0.0);
 
-        sala=new Sala("Gama","Pequena");
-        assertTrue( sala.getCustoPorH() > 0.0);
-
-        sala=new Sala("Gama","Alto-risco");
-        assertTrue( sala.getCustoPorH() > 0.0);
-
-        sala=new Sala("Gama","Teste");
-        assertEquals(0.0, sala.getCustoPorH());
+        assertEquals(2,sala.getTempoMinimoReservaH());
     }
 
     @Test
-    public void setCustoPorHPequenaInvalido() {
+    public void validaTempoMinimoPequenaTest() {
+        sala=new Sala("Gama","Pequena");
+
+        assertEquals(2, sala.getTempoMinimoReservaH());
+    }
+
+    @Test
+    public void validaTempoMinimoAltoRiscoTest() {
+        sala=new Sala("Gama","Alto-risco");
+
+        assertEquals(3,sala.getTempoMinimoReservaH());
+    }
+
+    @Test
+    public void validaCustoInicialSalaPequenaTest() {
+        sala=new Sala("Gama","pequena");
+
+        assertEquals(400.0, sala.getCustoPorH());
+    }
+
+    @Test
+    public void validaCustoInicialSalaGrandeTest() {
+        sala=new Sala("Gama","grande");
+
+        assertEquals(650.0, sala.getCustoPorH());
+    }
+
+    @Test
+    public void validaCustoInicialAltoRiscoTest() {
+        sala=new Sala("Gama","Alto-risco");
+
+        assertEquals(1200.0, sala.getCustoPorH());
+    }
+
+    @Test
+    public void setCustoPorHPequenaInvalidoTest() {
         Sala sala = new Sala("Gama","pequena");
 
         double valorAtual = sala.getCustoPorH();
@@ -46,7 +71,7 @@ public class SalaUnitTest {
     }
 
     @Test
-    public void setCustoPorHPequenaValido() {
+    public void setCustoPorHPequenaValidoTest() {
         Sala sala = new Sala("Gama","pequena");
         Sala.setCustoPorHPequena(200);
 
@@ -54,7 +79,7 @@ public class SalaUnitTest {
     }
 
     @Test
-    public void setCustoPorHGrandeInvalido() {
+    public void setCustoPorHGrandeInvalidoTest() {
         Sala sala = new Sala("Gama","grande");
 
         double valorAtual = sala.getCustoPorH();
@@ -65,7 +90,7 @@ public class SalaUnitTest {
     }
 
     @Test
-    public void setCustoPorHGrandeValido() {
+    public void setCustoPorHGrandeValidoTest() {
         Sala sala = new Sala("Gama","grande");
         Sala.setCustoPorHGrande(1500);
 
@@ -73,7 +98,7 @@ public class SalaUnitTest {
     }
 
     @Test
-    public void setCustoPorHAltoRiscoInvalido() {
+    public void setCustoPorHAltoRiscoInvalidoTest() {
         Sala sala = new Sala("Gama","Alto-risco");
 
         double valorAtual = sala.getCustoPorH();
@@ -84,7 +109,7 @@ public class SalaUnitTest {
     }
 
     @Test
-    public void setCustoPorHAltoRiscoValido() {
+    public void setCustoPorHAltoRiscoValidoTest() {
         Sala sala = new Sala("Gama","Alto-risco");
         Sala.setCustoPorHAltoRisco(3000);
 

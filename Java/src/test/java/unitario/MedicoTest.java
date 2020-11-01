@@ -1,7 +1,7 @@
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
-public class MedicoUnitTest {
+public class MedicoTest {
 
     private static String NOME = "Julio Cesar";
     private static String CRM = "12345";

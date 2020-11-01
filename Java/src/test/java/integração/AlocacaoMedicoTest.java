@@ -5,7 +5,7 @@ import java.util.Date;
 import static junit.framework.TestCase.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-public class AlocacaoMedicoUnitTest {
+public class AlocacaoMedicoTest {
     private static Date inicio,fim;
     private static Medico medico;
     private static Sala sala;
