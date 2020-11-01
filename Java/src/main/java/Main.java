@@ -163,9 +163,13 @@ public class Main {
     }
 
     private static boolean checaCoincideHorario(Alocacao a, Date i, Date f){
-        //retorna true se a alocacao 'a' estiver completa ou parcialmente dentro do intervalo de tempo de i a f.
-        if((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
-            a.getInicio().equals(i) || a.getFim().equals(f)) return true;
+        /*retorna true se a alocacao 'a' estiver completa ou parcialmente dentro do intervalo de tempo de i a f
+        ou se o intervalo de tempo de i a f estiver completa ou parcialmente dentro do intervalo de tempo da
+        alocacao 'a'.
+        */
+        if(((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
+            a.getInicio().equals(i) || a.getFim().equals(f)) || 
+            (i.after(a.getInicio()) && i.before(a.getFim()) || (f.before(a.getFim()) && f.after(a.getInicio())))) return true;
         return false;
     }
 
@@ -287,8 +291,6 @@ public class Main {
     }
 
     public static boolean horarioDisponivel(Sala sala, Medico responsavel, Date inicio, Date fim){
-        int mainInicio = inicio.getHours()*60 + inicio.getMinutes();
-        int mainFim = fim.getHours()*60 + fim.getMinutes();
         for (Alocacao a:alocacoes){
             if(sala.getNome().equalsIgnoreCase(a.getSala().getNome()) || 
                 responsavel.getCrm().equalsIgnoreCase(a.getResponsavel().getCrm())){
