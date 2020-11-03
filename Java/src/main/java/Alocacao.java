@@ -11,7 +11,7 @@ public class Alocacao {
 
     public Alocacao(Medico responsavel, Sala sala, Date inicio, Date fim){
         if(checaMesmoDia(inicio,fim) && checaHorarioMinMax(inicio,fim) && 
-        checaTempoMinimo(sala, inicio, fim) && Main.horarioDisponivel(sala,inicio,fim) &&
+        checaTempoMinimo(sala, inicio, fim) && Main.horarioDisponivel(sala,responsavel,inicio,fim) &&
         checaMedicoTipoSala(responsavel, sala)){
             /*se as datas de inicio e fim respeitam as regras de serem do mesmo dia, nao ser antes das 6,
             nao ser depois das 22, se o horario ja nao esta reservado, se o tempo minimo de locacao eh 
@@ -27,7 +27,7 @@ public class Alocacao {
         }
     }
 
-    private boolean checaMedicoTipoSala(Medico responsavel, Sala sala){
+    public static boolean checaMedicoTipoSala(Medico responsavel, Sala sala){
         /**Metodo que checa se o medico cumpre as regras "Cirurgiões
         cardiovasculares e neurologistas somente poderão fazer reservas de salas 
         grandes ou de altorisco" e "Dermatologistas somente poderão fazer reservas de salas pequenas".
@@ -48,7 +48,7 @@ public class Alocacao {
         return true;
     }
 
-    private boolean checaHorarioMinMax(Date inicio, Date fim){
+    public static boolean checaHorarioMinMax(Date inicio, Date fim){
         /**Metodo que checa se a data de inicio e fim respeitam os limites de hora min e max
          * @param Date inicio, data do inicio da locacao
          * @param Date fim, data do fim da locacao
@@ -57,7 +57,7 @@ public class Alocacao {
         return (inicio.getHours()>=MINH && inicio.getHours()<=MAXH) && (fim.getHours()>=MINH && fim.getHours()<=MAXH);
     }
 
-    private boolean checaMesmoDia(Date inicio, Date fim){
+    public static boolean checaMesmoDia(Date inicio, Date fim){
         /**Metodo que checa se o ano, mes e dia da data de locacao (inicio e fim) sao os mesmos, o que deve ser verdade
          * para respeitar a regra de so deixar locar entre 6h e 22h.
          * @param Date inicio, data do inicio da locacao
@@ -67,7 +67,7 @@ public class Alocacao {
         return inicio.getYear()==fim.getYear() && inicio.getMonth()==fim.getMonth() && inicio.getDay()==fim.getDay();
     }
 
-    private boolean checaTempoMinimo(Sala sala, Date inicio, Date fim){
+    public static boolean checaTempoMinimo(Sala sala, Date inicio, Date fim){
         /**Metodo que checa se a locacao respeita o limite de tempo minimo para locacoes de acordo com o seu tipo
          * de sala.
          * @param Date inicio, data do inicio da locacao

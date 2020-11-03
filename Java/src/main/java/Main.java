@@ -68,8 +68,7 @@ public class Main {
                 for igual ao fim da alocacao. Significa que os dois intervalos de tempo se sobrepoem pelo 
                 menos parcialmente, ou seja os dois coexistem, entao a alocacao esta no intervalo de tempo
                 desejado pelo usuario e deve ser printada.*/
-                if((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
-                a.getInicio().equals(i) || a.getFim().equals(f)) System.out.println(a);
+                if(checaCoincideHorario(a,i,f)) System.out.println(a);
             }
         }
         triggerVoltarParaOMenu();
@@ -161,6 +160,17 @@ public class Main {
         else if(escolha==2)Sala.setCustoPorHGrande(novoCusto);
         else if(escolha==3)Sala.setCustoPorHAltoRisco(novoCusto);
         triggerVoltarParaOMenu();
+    }
+
+    private static boolean checaCoincideHorario(Alocacao a, Date i, Date f){
+        /*retorna true se a alocacao 'a' estiver completa ou parcialmente dentro do intervalo de tempo de i a f
+        ou se o intervalo de tempo de i a f estiver completa ou parcialmente dentro do intervalo de tempo da
+        alocacao 'a'.
+        */
+        if(((a.getInicio().after(i) && a.getInicio().before(f)) || (a.getFim().before(f) && a.getFim().after(i)) ||
+            a.getInicio().equals(i) || a.getFim().equals(f)) || 
+            (i.after(a.getInicio()) && i.before(a.getFim()) || (f.before(a.getFim()) && f.after(a.getInicio())))) return true;
+        return false;
     }
 
     private static double inputDouble(double min, double max, String msg){
@@ -280,33 +290,15 @@ public class Main {
         return new Date(y-1900,m-1,d,h,mi);
     }
 
-    public static boolean horarioDisponivel(Sala sala, Date inicio, Date fim){
-        int mainInicio = inicio.getHours()*60 + inicio.getMinutes();
-        int mainFim = fim.getHours()*60 + fim.getMinutes();
+    public static boolean horarioDisponivel(Sala sala, Medico responsavel, Date inicio, Date fim){
         for (Alocacao a:alocacoes){
-            if(sala.getNome().equalsIgnoreCase(a.getSala().getNome())){
-                //se for a mesma sala
+            if(sala.getNome().equalsIgnoreCase(a.getSala().getNome()) || 
+                responsavel.getCrm().equalsIgnoreCase(a.getResponsavel().getCrm())){
+                //se for a mesma sala ou se for o mesmo medico
                 if(a.getInicio().getYear()==inicio.getYear() && a.getInicio().getMonth()==inicio.getMonth() && 
                 a.getInicio().getDay()==inicio.getDay()){
                     //se for no mesmo dia
-                    int aInicio = a.getInicio().getHours()*60 + a.getInicio().getMinutes();
-                    int aFim = a.getFim().getHours()*60 + a.getFim().getMinutes();
-                    if(mainInicio<aFim && mainInicio>aInicio){
-                        /*se o inicio pretendido for menor que algum fim, e maior que o inicio desse fim
-                         significa que o horario esta indisponivel pois o inicio do horario pretendido
-                         ocupa o fim de algum horario ja registrado*/
-                         return false;
-                    }
-                    if(mainFim>aInicio && mainFim<aFim){
-                        /*se o fim pretendido for maior que algum inicio, e menor que o fim desse inicio
-                        significa que o fim do horario pretendido ocupa algum horario ja registrado */
-                        return false;
-                    }
-                    if(mainInicio==aInicio || mainFim==aFim){
-                        //significa que queremos ocupar a sala em um momento em que ja esta ocupada
-                        return false;
-                    }
-
+                    if(checaCoincideHorario(a, inicio, fim)) return false;
                 }
             }
         }
