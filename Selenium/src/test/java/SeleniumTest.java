@@ -1,23 +1,15 @@
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.JavascriptExecutor;
-
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SeleniumTest {
-
 
     WebDriver driver;
 
@@ -30,6 +22,7 @@ public class SeleniumTest {
             }
     @Test
     public void CadastroAndLogin() throws InterruptedException {
+        Thread.sleep(3000);
         driver.findElement(By.xpath( "//button[text() = 'Cadastrar']")).click();
         WebDriverWait wait = new WebDriverWait(driver,60);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
@@ -85,8 +78,11 @@ public class SeleniumTest {
     }
     @Test
     public void TestQuestionCreate() throws InterruptedException {
+        Thread.sleep(
+                3000
+        );
         WebDriverWait wait = new WebDriverWait(driver,60);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
         By byValue;
         WebElement we;
 

@@ -45,20 +45,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Aulas/Projeto Arquitetura/Spring_01" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="JUnit.SeleniumTest">
-    <configuration name="AppSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppSelenium" />
-      <module name="Selenium" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SeleniumTest.TestQuestionCreate">
     <configuration name="SeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.CadastroAndLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTest" />
+      <option name="METHOD_NAME" value="CadastroAndLogin" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeleniumTest" />
         <item itemvalue="JUnit.SeleniumTest.TestQuestionCreate" />
+        <item itemvalue="JUnit.SeleniumTest.CadastroAndLogin" />
+        <item itemvalue="JUnit.SeleniumTest" />
         <item itemvalue="JUnit.SeleniumTest.Test2" />
         <item itemvalue="JUnit.SeleniumTest.Test1" />
-        <item itemvalue="Application.AppSelenium" />
       </list>
     </recent_temporary>
   </component>
@@ -122,35 +126,44 @@
     </state>
     <state x="1865" y="-205" key="FileChooserDialogImpl/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1602025509666" />
     <state x="473" y="157" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602168848683" />
-    <state width="1397" height="157" key="GridCell.Tab.0.bottom" timestamp="1604102291992">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="295" key="GridCell.Tab.0.bottom" timestamp="1604364670048">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1397" height="157" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
-    <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602638831483" />
-    <state width="1397" height="157" key="GridCell.Tab.0.center" timestamp="1604102291992">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="295" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604364670048" />
+    <state width="1323" height="295" key="GridCell.Tab.0.center" timestamp="1604364670048">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1397" height="157" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
-    <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602638831481" />
-    <state width="1397" height="157" key="GridCell.Tab.0.left" timestamp="1604102291992">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="295" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604364670048" />
+    <state width="1323" height="295" key="GridCell.Tab.0.left" timestamp="1604364670047">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1397" height="157" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
-    <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602638831481" />
-    <state width="1397" height="157" key="GridCell.Tab.0.right" timestamp="1604102291992">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="295" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604364670047" />
+    <state width="1323" height="295" key="GridCell.Tab.0.right" timestamp="1604364670048">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1602633949589" />
     <state width="1397" height="157" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604102291992" />
-    <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602638831481" />
-    <state x="1766" y="-168" key="com.intellij.ide.util.TipDialog" timestamp="1604098118176">
+    <state width="1323" height="295" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604364670048" />
+    <state x="1587" y="-318" key="SettingsEditor" timestamp="1604170629067">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
+    <state x="1587" y="-318" key="SettingsEditor/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604170629067" />
+    <state x="1807" y="-220" width="570" height="524" key="StructurePopup" timestamp="1604170230056">
+      <screen x="1366" y="-391" width="1440" height="860" />
+    </state>
+    <state x="1807" y="-220" width="570" height="524" key="StructurePopup/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604170230056" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1604343934284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1603839958061" />
-    <state x="1766" y="-168" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604098118176" />
+    <state x="1766" y="-168" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604167382685" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1604343934284" />
     <state x="1895" y="-43" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604008022140">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
@@ -159,9 +172,9 @@
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state x="1468" y="-258" key="new project wizard/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1602025516297" />
-    <state x="1742" y="0" key="run.anything.popup" timestamp="1603841844575">
+    <state x="1742" y="0" key="run.anything.popup" timestamp="1604170542050">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
-    <state x="1742" y="0" key="run.anything.popup/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1603841844575" />
+    <state x="1742" y="0" key="run.anything.popup/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1604170542050" />
   </component>
 </project>
