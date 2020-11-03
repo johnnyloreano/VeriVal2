@@ -34,6 +34,7 @@ public class MedicoTest {
     public void toStringTest() {
         medico=new Medico(CRM,NOME,ESPECIALIDADE);
 
+        System.out.println(medico.toString());
         assertEquals("Nome: "+NOME+"     especialidade: "+ESPECIALIDADE+"     CRM: "+CRM,medico.toString());
     }
 

@@ -5,10 +5,10 @@ import java.util.Date;
 import static junit.framework.TestCase.*;
 
 public class AlocacaoMedicoSalaTest {
-    private static Date inicio, fim;
-    private static Medico medico;
-    private static Sala sala;
-    private static Alocacao alocacao;
+    private static Date inicio, fim,inicio2,fim2;
+    private static Medico medico,medico2;
+    private static Sala sala,sala2;
+    private static Alocacao alocacao,alocacao2;
 
     @Test
     public void checaMedicoTipoSalaTest1() {
@@ -87,8 +87,8 @@ public class AlocacaoMedicoSalaTest {
 
     @Test
     public void toStringTest2() {
-        medico=new Medico("573820","Karine Francisco","dermatologista");
-        sala = new Sala("gama", "pequena");
+        medico=new Medico("573820","Bruna Ferreira","cirurgiao cardiovascular");
+        sala = new Sala("gama", "alto-risco");
         inicio = new Date(2020, 12, 10, 15, 35);
         fim = new Date(2020, 12, 10, 19, 20);
         alocacao = new Alocacao(medico, sala, inicio, fim);
@@ -98,15 +98,36 @@ public class AlocacaoMedicoSalaTest {
     }
 
     @Test
-    public void toStringTest3() {
-        medico=new Medico("573820","Bruna Ferreira","cirurgiao cardiovascular");
-        sala = new Sala("gama", "alto-risco");
-        inicio = new Date(2020, 12, 10, 15, 35);
-        fim = new Date(2020, 12, 10, 19, 20);
-        alocacao = new Alocacao(medico, sala, inicio, fim);
+    public void getInicioTest1() {
+        sala=new Sala("gama","alto-risco");
+        medico=new Medico("12345","Harry Potter","neurologista");
+        inicio=new Date(2020,10,14,12,30);
+        fim=new Date(2020,10,14,20,45);
+        alocacao=new Alocacao(medico,sala,inicio,fim);
+        assertEquals(inicio,alocacao.getInicio());
+    }
 
-        assertEquals("ALOCACAO:" + "\n Medico responsavel: " + medico+"\n Sala: " + sala
-                + "\n Data de inicio: " + inicio + "\n Data de termino: "+fim,alocacao.toString());
+    @Test
+    public void getFimTest1() {
+        sala=new Sala("gama","alto-risco");
+        medico=new Medico("12345","Harry Potter","neurologista");
+        inicio=new Date(2020,10,14,12,30);
+        fim=new Date(2020,10,14,20,45);
+        alocacao=new Alocacao(medico,sala,inicio,fim);
+        assertEquals(fim,alocacao.getFim());
+    }
+
+    @Test
+    public void getCustoTest1() {
+        sala=new Sala("gama","alto-risco");
+        medico=new Medico("12345","Harry Potter","neurologista");
+        inicio=new Date(2020,10,14,12,30);
+        fim=new Date(2020,10,14,20,45);
+        alocacao=new Alocacao(medico,sala,inicio,fim);
+        inicio=new Date(2020,10,14,12,30);
+        fim=new Date(2020,10,14,20,45);
+        alocacao=new Alocacao(medico,sala,inicio,fim);
+        assertEquals(9900.0,alocacao.getCusto());
     }
 
 }
