@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Alocacao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Java</a> &gt; <a href="index.source.html" class="el_package">app</a> &gt; <span class="el_source">Alocacao.java</span></div><h1>Alocacao.java</h1><pre class="source lang-java linenums">package app;
+
+import main.Main;
+
+import java.util.Calendar;
+public class Alocacao {
+    private Medico responsavel;
+    private Sala sala;
+    private Calendar inicio;
+    private Calendar fim;
+    private double custo;
+    private static final int MINH = 6;//hora da qual nao se pode alocar salas antes
+    private static final int MAXH = 22;//hora da qual nao se pode alocar salas depois.
+
+<span class="fc" id="L15">    public Alocacao(Medico responsavel, Sala sala, Calendar inicio, Calendar fim){</span>
+<span class="pc bpc" id="L16" title="2 of 4 branches missed.">        if(checaMesmoDia(inicio,fim) &amp;&amp; checaHorarioMinMax(inicio,fim) &amp;&amp; </span>
+<span class="pc bpc" id="L17" title="2 of 4 branches missed.">        checaTempoMinimo(sala, inicio, fim) &amp;&amp; Main.horarioDisponivel(sala,responsavel,inicio,fim) &amp;&amp;</span>
+<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        checaMedicoTipoSala(responsavel, sala)){</span>
+            /*se as datas de inicio e fim respeitam as regras de serem do mesmo dia, nao ser antes das 6,
+            nao ser depois das 22, se o horario ja nao esta reservado, se o tempo minimo de locacao eh 
+            respeitado e se o medico tem permissao de locar esse tipo de sala, cria o objeto*/
+<span class="fc" id="L22">            this.responsavel = responsavel;</span>
+<span class="fc" id="L23">            this.sala = sala;</span>
+<span class="fc" id="L24">            this.inicio = inicio;</span>
+<span class="fc" id="L25">            this.fim = fim;</span>
+<span class="fc" id="L26">            custo = calcultaCusto();     </span>
+        }
+        else{
+<span class="nc" id="L29">            throw new IllegalArgumentException();</span>
+        }
+<span class="fc" id="L31">    }</span>
+
+    public static boolean checaMedicoTipoSala(Medico responsavel, Sala sala){
+        /**Metodo que checa se o medico cumpre as regras &quot;Cirurgiões
+        cardiovasculares e neurologistas somente poderão fazer reservas de salas 
+        grandes ou de altorisco&quot; e &quot;Dermatologistas somente poderão fazer reservas de salas pequenas&quot;.
+         * @param app.Medico responsavel, responsavel pela locacao
+         * @param app.Sala sala, sala a ser locada
+         * @return boolean, indica se o medico respeitou a regra de tipo de sala por especialidade
+         */
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if(responsavel.getEspecialidade().equalsIgnoreCase(&quot;dermatologista&quot;)){</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">            return (sala.getTipo() == SalaTipo.PEQUENA);</span>
+        }
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        else if(responsavel.getEspecialidade().equalsIgnoreCase(&quot;cirurgiao cardiovascular&quot;) ||</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">        responsavel.getEspecialidade().equalsIgnoreCase(&quot;neurologista&quot;)){</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">             return (sala.getTipo() == SalaTipo.GRANDE ||</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">                     sala.getTipo() == SalaTipo.ALTO_RISCO);</span>
+        }
+<span class="nc" id="L49">        return true;</span>
+    }
+
+    public static boolean checaHorarioMinMax(Calendar inicio, Calendar fim){
+        /**Metodo que checa se a data de inicio e fim respeitam os limites de hora min e max
+         * @param Date inicio, data do inicio da locacao
+         * @param Date fim, data do fim da locacao
+         * @return boolean, indica se os horarios respeitam as horas limites
+         */
+<span class="pc bpc" id="L58" title="2 of 8 branches missed.">        return (inicio.get(Calendar.HOUR_OF_DAY)&gt;=MINH &amp;&amp; inicio.get(Calendar.HOUR_OF_DAY)&lt;=MAXH) &amp;&amp; (fim.get(Calendar.HOUR_OF_DAY)&gt;=MINH &amp;&amp; fim.get(Calendar.HOUR_OF_DAY)&lt;=MAXH);</span>
+    }
+
+    public static boolean checaMesmoDia(Calendar inicio, Calendar fim){
+        /**Metodo que checa se o ano, mes e dia da data de locacao (inicio e fim) sao os mesmos, o que deve ser verdade
+         * para respeitar a regra de so deixar locar entre 6h e 22h.
+         * @param Date inicio, data do inicio da locacao
+         * @param Date fim, data do fim da locacao
+         * @return boolean, indica se as datas possuem o mesmo ano, mes e dia
+         */
+<span class="fc bfc" id="L68" title="All 6 branches covered.">        return inicio.get(Calendar.YEAR)==fim.get(Calendar.YEAR) &amp;&amp; inicio.get(Calendar.MONTH)==fim.get(Calendar.MONTH) &amp;&amp; inicio.get(Calendar.DAY_OF_MONTH)==fim.get(Calendar.DAY_OF_MONTH);</span>
+    }
+
+    public static boolean checaTempoMinimo(Sala sala, Calendar inicio, Calendar fim){
+        /**Metodo que checa se a locacao respeita o limite de tempo minimo para locacoes de acordo com o seu tipo
+         * de sala.
+         * @param Date inicio, data do inicio da locacao
+         * @param Date fim, data do fim da locacao
+         * @param app.Sala sala, sala a ser locada
+         * @return boolean, indica se a locacao respeita o tempo minimo
+         */
+        //converte os horarios para minutos e faz a comparacao de maior igual.
+<span class="fc" id="L80">        int inicioMinutos = inicio.get(Calendar.HOUR)*60 + inicio.get(Calendar.MINUTE);</span>
+<span class="fc" id="L81">        int fimMinutos = fim.get(Calendar.HOUR)*60 + fim.get(Calendar.MINUTE);</span>
+<span class="fc" id="L82">        int duracaoMinimaMinutos = sala.getTempoMinimoReservaH()*60;</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        return fimMinutos-inicioMinutos &gt;= duracaoMinimaMinutos;</span>
+    }
+
+    public Medico getResponsavel(){
+<span class="nc" id="L87">        return this.responsavel;</span>
+    }
+    public Sala getSala(){
+<span class="nc" id="L90">        return this.sala;</span>
+    }
+    public Calendar getInicio(){
+<span class="fc" id="L93">        return this.inicio;</span>
+    }
+    public Calendar getFim(){
+<span class="fc" id="L96">        return this.fim;</span>
+    }
+    private double calcultaCusto(){
+<span class="fc" id="L99">        int inicioMinutos = inicio.get(Calendar.HOUR)*60 + inicio.get(Calendar.MINUTE);</span>
+<span class="fc" id="L100">        int fimMinutos = fim.get(Calendar.HOUR)*60 + fim.get(Calendar.MINUTE);</span>
+<span class="fc" id="L101">        return ((fimMinutos-inicioMinutos)/60.0) * sala.getCustoPorH();</span>
+    }
+    public double getCusto(){
+<span class="fc" id="L104">        return custo;</span>
+    }
+    public void alteraCusto(){
+<span class="nc" id="L107">        custo=calcultaCusto();</span>
+<span class="nc" id="L108">    }</span>
+
+    @Override
+    public String toString(){
+<span class="fc" id="L112">        return &quot;ALOCACAO:&quot; + &quot;\n app.Medico responsavel: &quot; + this.responsavel+&quot;\n app.Sala: &quot; + this.sala</span>
+        + &quot;\n Data de inicio: &quot; + this.inicio + &quot;\n Data de termino: &quot;+this.fim;
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

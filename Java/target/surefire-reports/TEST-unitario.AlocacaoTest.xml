@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="24" failures="0" name="unitario.AlocacaoTest" time="0.01" errors="0" skipped="0">
+<testsuite tests="24" failures="0" name="unitario.AlocacaoTest" time="0.019" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.5+10-b520.30"/>
@@ -46,7 +46,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.2 test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.2 install"/>
     <property name="java.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.2\jbr"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,25 +63,25 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest1" time="0.002"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest2" time="0"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest3" time="0"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest1" time="0.001"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest2" time="0.001"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest3" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest4" time="0.001"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest5" time="0"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest6" time="0"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest5" time="0.001"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaTempoMinimoTest6" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMesmoDiaTest1" time="0"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaMesmoDiaTest2" time="0"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaMesmoDiaTest2" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMesmoDiaTest3" time="0"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMesmoDiaTest4" time="0"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMesmoDiaTest5" time="0"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaHorarioMinMaxTest1" time="0"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaHorarioMinMaxTest2" time="0"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaHorarioMinMaxTest1" time="0.001"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaHorarioMinMaxTest2" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaHorarioMinMaxTest3" time="0"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaHorarioMinMaxTest4" time="0"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaHorarioMinMaxTest4" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest1" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest2" time="0.001"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest3" time="0"/>
-  <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest4" time="0"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest3" time="0.001"/>
+  <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest4" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest5" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest6" time="0.001"/>
   <testcase classname="unitario.AlocacaoTest" name="checaMedicoTipoSalaTest7" time="0.001"/>

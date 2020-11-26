@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Sala.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Java</a> &gt; <a href="index.source.html" class="el_package">app</a> &gt; <span class="el_source">Sala.java</span></div><h1>Sala.java</h1><pre class="source lang-java linenums">package app;
+
+import main.Main;
+
+public class Sala {
+    private String nome;
+    private SalaTipo tipo;
+    private int tempoMinimoReservaH;//tempo minimo que a sala deve ser locada para permitir a locacao (em horas)
+<span class="fc" id="L9">    private static double custoPorHPequena = 400.0;//custo por hora de salas pequenas</span>
+<span class="fc" id="L10">    private static double custoPorHGrande = 650.0;//custo por hora de salas grandes</span>
+<span class="fc" id="L11">    private static double custoporHAltoRisco = 1200.0;//custo por hora de salas de alto-risco</span>
+
+<span class="fc" id="L13">    public Sala(String nome, SalaTipo tipo){</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        if(tipo == SalaTipo.PEQUENA){</span>
+<span class="fc" id="L15">            this.nome = nome;</span>
+<span class="fc" id="L16">            this.tipo = tipo;</span>
+<span class="fc" id="L17">            tempoMinimoReservaH=2;</span>
+        }
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        else if(tipo== SalaTipo.GRANDE){</span>
+<span class="fc" id="L20">            this.nome = nome;</span>
+<span class="fc" id="L21">            this.tipo = tipo;</span>
+<span class="fc" id="L22">            tempoMinimoReservaH=2;</span>
+        }
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        else if(tipo == SalaTipo.ALTO_RISCO){</span>
+<span class="fc" id="L25">            this.nome = nome;</span>
+<span class="fc" id="L26">            this.tipo = tipo;</span>
+<span class="fc" id="L27">            tempoMinimoReservaH=3;</span>
+        }
+        else{
+<span class="nc" id="L30">            System.out.println(&quot;Tipo nao existente!&quot;);</span>
+        }
+<span class="fc" id="L32">    }</span>
+
+    public String getNome(){
+<span class="fc" id="L35">        return this.nome;</span>
+    }
+
+    public SalaTipo getTipo(){
+<span class="fc" id="L39">        return this.tipo;</span>
+    }   
+    
+    public double getCustoPorH(){
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        if(tipo == SalaTipo.PEQUENA){</span>
+<span class="fc" id="L44">            return custoPorHPequena;</span>
+        }
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        else if(tipo == SalaTipo.GRANDE){</span>
+<span class="fc" id="L47">            return custoPorHGrande;</span>
+        }
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">        else if(tipo == SalaTipo.ALTO_RISCO){</span>
+<span class="fc" id="L50">            return custoporHAltoRisco;</span>
+        }
+<span class="nc" id="L52">        return 0.0;</span>
+    }
+
+    public int getTempoMinimoReservaH(){
+<span class="fc" id="L56">        return this.tempoMinimoReservaH;</span>
+    }
+
+    public static void setCustoPorHPequena(double valor){
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        if(valor&gt;0){</span>
+<span class="fc" id="L61">            custoPorHPequena = valor;</span>
+<span class="fc" id="L62">            Main.atualizaAlocacoes();</span>
+        }
+<span class="fc" id="L64">        else System.out.println(&quot;Valor inválido!&quot;);</span>
+<span class="fc" id="L65">    }</span>
+    public static void setCustoPorHGrande(double valor){
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if(valor&gt;0){</span>
+<span class="fc" id="L68">            custoPorHGrande = valor;</span>
+<span class="fc" id="L69">            Main.atualizaAlocacoes();</span>
+        }
+<span class="fc" id="L71">        else System.out.println(&quot;Valor inválido!&quot;);</span>
+<span class="fc" id="L72">    }</span>
+    public static void setCustoPorHAltoRisco(double valor){
+<span class="fc bfc" id="L74" title="All 2 branches covered.">        if(valor&gt;0){</span>
+<span class="fc" id="L75">            custoporHAltoRisco = valor;</span>
+<span class="fc" id="L76">            Main.atualizaAlocacoes();</span>
+        }
+<span class="fc" id="L78">        else System.out.println(&quot;Valor inválido!&quot;);</span>
+<span class="fc" id="L79">    }</span>
+
+    @Override
+    public String toString(){
+<span class="fc" id="L83">        return &quot;Nome: &quot;+this.nome+&quot;     Tipo: &quot;+this.tipo+&quot;     Custo por hora: &quot;+this.getCustoPorH();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

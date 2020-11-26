@@ -256,6 +256,11 @@ public class AlocacaoTest {
 
         assertTrue(Alocacao.checaHorarioMinMax(inicio,fim));
     }
+
+    @Test
+    public void alteraCustoTest(){
+
+    }
 }
 
 
