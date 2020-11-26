@@ -2,15 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="037a0791-3ae9-41f0-b4d1-746ec46f3844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sonar_cloud/AlocacaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Alocacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/AlocacaoIntTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/AlocacaoMedicoIntTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/AlocacaoSalaIntTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/AlocacaoUniTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/META-INF/main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Medico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/MedicoUniTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Sala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/SalaUniTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Alocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Alocacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Medico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integração/AlocacaoMedicoSalaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integração/AlocacaoMedicoSalaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integração/AlocacaoMedicoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integração/AlocacaoMedicoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integração/AlocacaoSalaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integração/AlocacaoSalaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitario/AlocacaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitario/AlocacaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitario/MedicoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitario/MedicoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitario/SalaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitario/SalaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Java-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Alocacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Medico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/.sonar_lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AlocacaoMedicoSalaTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AlocacaoMedicoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AlocacaoSalaTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AlocacaoSalaTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AlocacaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/MedicoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SalaTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AlocacaoMedicoSalaTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AlocacaoMedicoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AlocacaoSalaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AlocacaoSalaTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AlocacaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MedicoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-SalaTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AlocacaoMedicoSalaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AlocacaoMedicoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AlocacaoSalaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AlocacaoSalaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AlocacaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MedicoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SalaTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +85,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>criar</find>
-      <find>responsavel</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1k7NhUJdc8KSDx5TsGp0Xtcp8AN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -76,7 +126,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -86,60 +136,86 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AlocacaoUniTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlocacaoUniTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AlocacaoUniTest" />
+  <component name="RunManager" selected="JUnit.AlocacaoMedicoSalaTest">
+    <configuration name="AlocacaoMedicoSalaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integração.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integração" />
+      <option name="MAIN_CLASS_NAME" value="integração.AlocacaoMedicoSalaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlocacaoUniTest.excecaoTest9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AlocacaoUniTest" />
-      <option name="METHOD_NAME" value="excecaoTest9" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlocacaoUniTest.getCustoTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AlocacaoUniTest" />
+    <configuration name="AlocacaoMedicoSalaTest.getCustoTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integração.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integração" />
+      <option name="MAIN_CLASS_NAME" value="integração.AlocacaoMedicoSalaTest" />
       <option name="METHOD_NAME" value="getCustoTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlocacaoUniTest.toStringTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AlocacaoUniTest" />
+    <configuration name="AlocacaoMedicoSalaTest.toStringTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integração.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integração" />
+      <option name="MAIN_CLASS_NAME" value="integração.AlocacaoMedicoSalaTest" />
       <option name="METHOD_NAME" value="toStringTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AlocacaoMedicoSalaTest.toStringTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integração.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integração" />
+      <option name="MAIN_CLASS_NAME" value="integração.AlocacaoMedicoSalaTest" />
+      <option name="METHOD_NAME" value="toStringTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlocacaoSalaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <option name="PACKAGE_NAME" value="integração" />
+      <option name="MAIN_CLASS_NAME" value="AlocacaoSalaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AlocacaoUniTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AlocacaoUniTest.excecaoTest9" />
-        <item itemvalue="JUnit.AlocacaoUniTest.toStringTest1" />
-        <item itemvalue="JUnit.AlocacaoUniTest.getCustoTest1" />
+        <item itemvalue="JUnit.AlocacaoMedicoSalaTest" />
+        <item itemvalue="JUnit.AlocacaoMedicoSalaTest.getCustoTest1" />
+        <item itemvalue="JUnit.AlocacaoMedicoSalaTest.toStringTest2" />
+        <item itemvalue="JUnit.AlocacaoMedicoSalaTest.toStringTest1" />
+        <item itemvalue="JUnit.AlocacaoSalaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -161,38 +237,6 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="AlocacaoUniTest_getCustoTest1 - 2020.11.01 at 01h 33m 29s.xml">
-      <configuration name="AlocacaoUniTest.getCustoTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_getCustoTest1 - 2020.11.01 at 01h 33m 58s.xml">
-      <configuration name="AlocacaoUniTest.getCustoTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_getCustoTest1 - 2020.11.01 at 01h 34m 24s.xml">
-      <configuration name="AlocacaoUniTest.getCustoTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_getCustoTest1 - 2020.11.01 at 01h 34m 59s.xml">
-      <configuration name="AlocacaoUniTest.getCustoTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_getCustoTest1 - 2020.11.01 at 01h 35m 44s.xml">
-      <configuration name="AlocacaoUniTest.getCustoTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_getCustoTest1 - 2020.11.01 at 01h 37m 04s.xml">
-      <configuration name="AlocacaoUniTest.getCustoTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_getCustoTest1 - 2020.11.01 at 01h 37m 51s.xml">
-      <configuration name="AlocacaoUniTest.getCustoTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_toStringTest1 - 2020.11.01 at 01h 40m 24s.xml">
-      <configuration name="AlocacaoUniTest.toStringTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest_excecaoTest9 - 2020.11.01 at 01h 50m 43s.xml">
-      <configuration name="AlocacaoUniTest.excecaoTest9" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlocacaoUniTest - 2020.11.01 at 01h 56m 01s.xml">
-      <configuration name="AlocacaoUniTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="28192000" />
   </component>
@@ -200,38 +244,59 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="34" y="411" width="1182" height="506" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1606430666069">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="34" y="411" width="1182" height="506" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1606430666069" />
     <state x="1934" y="-71" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1605047938790">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state x="1934" y="-71" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605047938790" />
-    <state width="1397" height="342" key="GridCell.Tab.0.bottom" timestamp="1605048765610">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="217" key="GridCell.Tab.0.bottom" timestamp="1606430772017">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1397" height="342" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605048765610" />
-    <state width="1397" height="342" key="GridCell.Tab.0.center" timestamp="1605048765610">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1606430772017" />
+    <state width="1323" height="16" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605665465360" />
+    <state width="1323" height="217" key="GridCell.Tab.0.center" timestamp="1606430772017">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1397" height="342" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605048765610" />
-    <state width="1397" height="342" key="GridCell.Tab.0.left" timestamp="1605048765609">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="217" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1606430772017" />
+    <state width="1323" height="16" key="GridCell.Tab.0.center/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605665465360" />
+    <state width="1323" height="217" key="GridCell.Tab.0.left" timestamp="1606430772017">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1397" height="342" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605048765609" />
-    <state width="1397" height="342" key="GridCell.Tab.0.right" timestamp="1605048765610">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state width="1323" height="217" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1606430772017" />
+    <state width="1323" height="16" key="GridCell.Tab.0.left/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605665465360" />
+    <state width="1323" height="217" key="GridCell.Tab.0.right" timestamp="1606430772017">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1397" height="342" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605048765610" />
+    <state width="1323" height="217" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1606430772017" />
+    <state width="1323" height="16" key="GridCell.Tab.0.right/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605665465360" />
     <state x="1616" y="-305" key="Maven.ArtifactSearchDialog" timestamp="1605048388703">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
     <state x="1616" y="-305" key="Maven.ArtifactSearchDialog/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605048388703" />
-    <state x="1587" y="-380" key="SettingsEditor" timestamp="1605048546025">
-      <screen x="1366" y="-391" width="1440" height="860" />
+    <state x="210" y="9" key="SettingsEditor" timestamp="1606430289845">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="210" y="9" key="SettingsEditor/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1606430289845" />
     <state x="1587" y="-380" key="SettingsEditor/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605048546025" />
-    <state x="1782" y="-136" key="com.intellij.ide.util.TipDialog" timestamp="1605047803488">
+    <state x="1782" y="-136" key="com.intellij.ide.util.TipDialog" timestamp="1606429971361">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>
-    <state x="1782" y="-136" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1605047803488" />
+    <state x="1782" y="-136" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-391.1440.860@1366.-391.1440.860" timestamp="1606429971361" />
+    <state x="217" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605661269642">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="217" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1605661269642" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605657093454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1605657093454" />
+    <state x="379" y="0" width="737" height="728" key="find.popup" timestamp="1605663758553">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="0" width="737" height="728" key="find.popup/0.0.1366.728/1366.-391.1440.860@0.0.1366.728" timestamp="1605663758553" />
     <state x="1742" y="-308" width="670" height="676" key="search.everywhere.popup" timestamp="1605048424619">
       <screen x="1366" y="-391" width="1440" height="860" />
     </state>

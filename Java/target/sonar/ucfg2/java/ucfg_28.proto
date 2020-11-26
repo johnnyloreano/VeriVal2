@@ -1,0 +1,97 @@
+
+Japp.Alocacao#checaHorarioMinMax(Ljava/util/Calendar;Ljava/util/Calendar;)ZS
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java4 4(,"6*ˇ
+2U
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:ç :(êr
+p
+U
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:ï :(©	
+%9int"__id*
+""¥±
+U
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:ç :(™
+
+%10int"java.util.Calendar#get(I)I*
+
+fimjava.util.Calendar*
+	
+%9int2get(I)s
+q
+U
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:¨ :(∞
+
+%11int"__id*
+""*
+1*¸
+3S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:f :(iq
+o
+T
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:n :(Ç	
+%6int"__id*
+""≤Ø
+T
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:f :(É	
+%7int"java.util.Calendar#get(I)I*
+
+fimjava.util.Calendar*
+	
+%6int2get(I)r
+p
+U
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:Ö :(â	
+%8int"__id*
+""*
+2
+1*˚
+5S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:: :(@p
+n
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:E :(Y	
+%3int"__id*
+""¥±
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:: :(Z	
+%4int"java.util.Calendar#get(I)I*
+
+iniciojava.util.Calendar*
+	
+%3int2get(I)p
+n
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:\ :(`	
+%5int"__id*
+""*
+3
+1*˛
+6S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java: :(p
+n
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java: :(/	
+%0int"__id*
+""¥±
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java: :(0	
+%1int"java.util.Calendar#get(I)I*
+
+iniciojava.util.Calendar*
+	
+%0int2get(I)p
+n
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java:2 :(6	
+%2int"__id*
+""*	
+3
+5
+1*π
+1T
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java: :(≤"^
+T
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java: :(≤
+"":
+iniciojava.util.Calendar:
+fimjava.util.CalendarB"
+app.Alocacao

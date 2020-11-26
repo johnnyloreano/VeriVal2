@@ -1,0 +1,232 @@
+
+\main.Main#horarioDisponivel(Lapp/Sala;Lapp/Medico;Ljava/util/Calendar;Ljava/util/Calendar;)ZR
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≠ ≠(+"10*ˆ
+2R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaÆ Æ(w
+u
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaÆ Æ(
+aapp.Alocacao"__id*
+""õ
+ò
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaÆ Æ(
+aapp.Alocacao"
+__arrayGet*
+
+%0java.util.ArrayList*
+""*
+9
+1*µ
+3R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaµD µ(I"\
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaµ= µ(J
+""*É
+4R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaµ µ(+°
+û
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaµ µ(;
+%24boolean"Wmain.Main#checaCoincideHorario(Lapp/Alocacao;Ljava/util/Calendar;Ljava/util/Calendar;)Z*"
+	main.Main*
+
+aapp.Alocacao*
+
+iniciojava.util.Calendar*
+
+fimjava.util.Calendar*
+2
+3*ı
+5R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥ ≥(¬ø
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥ ≥(
+%19java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()p
+n
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥" ≥(7
+
+%20int"__id*
+""≤Ø
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥ ≥(8
+
+%21int"java.util.Calendar#get(I)I*
+
+%19java.util.Calendar*
+
+
+%20int2get(I)p
+n
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥E ≥(Z
+
+%22int"__id*
+""µ≤
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥: ≥([
+
+%23int"java.util.Calendar#get(I)I*
+
+iniciojava.util.Calendar*
+
+
+%22int2get(I)*
+2
+4*¯
+6R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤R ≤(S¬ø
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤R ≤(_
+%14java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()p
+n
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤d ≤(r
+
+%15int"__id*
+""≤Ø
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤R ≤(s
+
+%16int"java.util.Calendar#get(I)I*
+
+%14java.util.Calendar*
+
+
+%15int2get(I)r
+p
+T
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤Ä ≤(é
+
+%17int"__id*
+""∂≥
+S
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤u ≤(è
+
+%18int"java.util.Calendar#get(I)I*
+
+iniciojava.util.Calendar*
+
+
+%17int2get(I)*
+2
+5*Û
+7R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤ ≤(¡æ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤ ≤( 
+%9java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()p
+n
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤% ≤(2
+
+%10int"__id*
+""±Æ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤ ≤(3
+
+%11int"java.util.Calendar#get(I)I*
+
+%9java.util.Calendar*
+
+
+%10int2get(I)p
+n
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤@ ≤(M
+
+%12int"__id*
+""µ≤
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤5 ≤(N
+
+%13int"java.util.Calendar#get(I)I*
+
+iniciojava.util.Calendar*
+
+
+%12int2get(I)*
+2
+6*è
+8R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java∞ ∞(Ω∫
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java∞ ∞($
+%5java.lang.String"%app.Medico#getCrm()Ljava/lang/String;*
+
+responsavel
+app.Medico2getCrm()ª∏
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java∞6 ∞(H
+%6
+app.Medico")app.Alocacao#getResponsavel()Lapp/Medico;*
+
+aapp.Alocacao2getResponsavel()¥±
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java∞6 ∞(Q
+%7java.lang.String"%app.Medico#getCrm()Ljava/lang/String;*
+
+%6
+app.Medico2getCrm()¯ı
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java∞ ∞(R
+%8boolean"6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z*
+
+%5java.lang.String*
+
+%7java.lang.String2$equalsIgnoreCase(Ljava/lang/String;)*
+2
+7*Ú
+9R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaØ Ø(¥±
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaØ Ø(
+%1java.lang.String"$app.Sala#getNome()Ljava/lang/String;*
+
+salaapp.Sala2	getNome()©¶
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaØ/ Ø(:
+%2app.Sala" app.Alocacao#getSala()Lapp/Sala;*
+
+aapp.Alocacao2	getSala()≤Ø
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaØ/ Ø(D
+%3java.lang.String"$app.Sala#getNome()Ljava/lang/String;*
+
+%2app.Sala2	getNome()¯ı
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaØ Ø(E
+%4boolean"6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z*
+
+%1java.lang.String*
+
+%3java.lang.String2$equalsIgnoreCase(Ljava/lang/String;)*
+7
+8*ˆ
+10R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaÆ Æ(!ñ
+ì
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaÆ Æ(!
+%0java.util.ArrayList"__id**
+	main.Main"
+	alocacoes*
+2*µ
+1R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaπ π("\
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaπ π(
+"":
+salaapp.Sala:
+responsavel
+app.Medico:
+iniciojava.util.Calendar:
+fimjava.util.CalendarB"
+	main.Main

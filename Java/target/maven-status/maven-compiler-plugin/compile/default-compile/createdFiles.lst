@@ -1,4 +1,5 @@
-Sala.class
-Main.class
-Alocacao.class
-Medico.class
+app\Alocacao.class
+app\Sala.class
+app\SalaTipo.class
+main\Main.class
+app\Medico.class

@@ -1,9 +1,15 @@
+package integração;
+
+import app.Alocacao;
+import app.Medico;
+import app.Sala;
+import app.SalaTipo;
 import org.junit.Test;
 
 import java.util.Date;
 
-import static junit.framework.TestCase.assertFalse;
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -17,7 +23,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest1() {
         medico=new Medico("482604","Marie Curie","neurologista");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("grande");
+        when(sala.getTipo()).thenReturn(SalaTipo.GRANDE);
         assertTrue(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -25,7 +31,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest2() {
         medico=new Medico("482604","Marie Curie","neurologista");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("pequena");
+        when(sala.getTipo()).thenReturn(SalaTipo.PEQUENA);
         assertFalse(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -33,7 +39,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest3() {
         medico=new Medico("482604","Marie Curie","neurologista");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("alto-risco");
+        when(sala.getTipo()).thenReturn(SalaTipo.ALTO_RISCO);
         assertTrue(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -41,7 +47,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest4() {
         medico=new Medico("482604","Marie Curie","cirurgiao cardiovascular");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("alto-risco");
+        when(sala.getTipo()).thenReturn(SalaTipo.ALTO_RISCO);
         assertTrue(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -49,7 +55,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest5() {
         medico=new Medico("482604","Marie Curie","cirurgiao cardiovascular");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("grande");
+        when(sala.getTipo()).thenReturn(SalaTipo.GRANDE);
         assertTrue(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -57,7 +63,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest6() {
         medico=new Medico("482604","Marie Curie","cirurgiao cardiovascular");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("pequena");
+        when(sala.getTipo()).thenReturn(SalaTipo.PEQUENA);
         assertFalse(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -65,7 +71,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest7() {
         medico=new Medico("482604","Marie Curie","dermatologista");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("pequena");
+        when(sala.getTipo()).thenReturn(SalaTipo.PEQUENA);
         assertTrue(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -73,7 +79,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest8() {
         medico=new Medico("482604","Marie Curie","dermatologista");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("grande");
+        when(sala.getTipo()).thenReturn(SalaTipo.GRANDE);
         assertFalse(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
@@ -81,7 +87,7 @@ public class AlocacaoMedicoTest {
     public void checaMedicoTipoSalaTest9() {
         medico=new Medico("482604","Marie Curie","dermatologista");
         sala=mock(Sala.class);
-        when(sala.getTipo()).thenReturn("alto-risco");
+        when(sala.getTipo()).thenReturn(SalaTipo.ALTO_RISCO);
         assertFalse(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 

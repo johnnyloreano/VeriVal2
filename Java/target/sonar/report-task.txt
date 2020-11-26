@@ -1,0 +1,7 @@
+organization=johnnyloreano
+projectKey=VerificationValidation2
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.14894
+dashboardUrl=https://sonarcloud.io/dashboard?id=VerificationValidation2
+ceTaskId=AXYGwCXZzb_RWJEN0ZKp
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXYGwCXZzb_RWJEN0ZKp

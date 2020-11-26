@@ -1,3 +1,6 @@
+package unitario;
+
+import app.Medico;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

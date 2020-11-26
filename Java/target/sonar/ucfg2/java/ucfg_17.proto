@@ -1,0 +1,54 @@
+
+)main.Main#inputInt(IILjava/lang/String;)IR
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javañ ñ("9*¶
+7R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaõ õ(5ƒ
+¡
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaõ õ(5	
+%4int"/java.lang.Integer#parseInt(Ljava/lang/String;)I*"
+java.lang.Integer*
+
+%3java.lang.String*
+9
+1*µ
+8R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaõ õ(ç
+ä
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaõ' õ()
+%2java.util.Scanner"__id**
+	main.Main"
+in∆√
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaõ' õ(4
+%3java.lang.String".java.util.Scanner#nextLine()Ljava/lang/String;*
+
+%2java.util.Scanner2
+nextLine()*
+7* 
+9R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaô ô(
+}
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaô ô(
+%0java.io.PrintStream"__id*
+""ÍÁ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaô ô(#
+
+%1void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%0java.io.PrintStream*
+
+msgjava.lang.String2println(Ljava/lang/String;)*
+8*µ
+1R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java£ £("\
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java£ £(
+"":
+"":
+"":
+msgjava.lang.StringB"
+	main.Main

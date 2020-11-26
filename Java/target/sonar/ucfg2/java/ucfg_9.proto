@@ -1,0 +1,185 @@
+
+Wmain.Main#checaCoincideHorario(Lapp/Alocacao;Ljava/util/Calendar;Ljava/util/Calendar;)ZR
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≠ ≠(/"16*ç
+2R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥] ¥(^¬ø
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥e ¥(r
+%18java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()ÈÊ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥] ¥(s
+%19boolean"-java.util.Calendar#after(Ljava/lang/Object;)Z*
+
+fjava.util.Calendar*
+
+%18java.util.Calendar2after(Ljava/lang/Object;)*
+1*ï
+13R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤J ≤(Kª∏
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤J ≤(T
+%4java.util.Calendar")app.Alocacao#getFim()Ljava/util/Calendar;*
+
+aapp.Alocacao2getFim()ÈÊ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤J ≤(^
+%5boolean".java.util.Calendar#before(Ljava/lang/Object;)Z*
+
+%4java.util.Calendar*
+
+fjava.util.Calendar2before(Ljava/lang/Object;)*
+6
+8
+10
+12
+1*å
+3R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥E ¥(Fºπ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥N ¥(X
+%16java.util.Calendar")app.Alocacao#getFim()Ljava/util/Calendar;*
+
+aapp.Alocacao2getFim()ÎË
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥E ¥(Y
+%17boolean".java.util.Calendar#before(Ljava/lang/Object;)Z*
+
+fjava.util.Calendar*
+
+%16java.util.Calendar2before(Ljava/lang/Object;)*
+2
+1*õ
+15R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤- ≤(.¡æ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤- ≤(:
+%2java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()ÈÊ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤- ≤(D
+%3boolean".java.util.Calendar#before(Ljava/lang/Object;)Z*
+
+%2java.util.Calendar*
+
+fjava.util.Calendar2before(Ljava/lang/Object;)*
+13
+6
+8
+10
+1*å
+5R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥, ¥(-ºπ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥5 ¥(?
+%14java.util.Calendar")app.Alocacao#getFim()Ljava/util/Calendar;*
+
+aapp.Alocacao2getFim()ÎË
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥, ¥(@
+%15boolean".java.util.Calendar#before(Ljava/lang/Object;)Z*
+
+ijava.util.Calendar*
+
+%14java.util.Calendar2before(Ljava/lang/Object;)*
+3
+1*ù
+16R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤ ≤(¡æ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤ ≤( 
+%0java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()Á‰
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤ ≤()
+%1boolean"-java.util.Calendar#after(Ljava/lang/Object;)Z*
+
+%0java.util.Calendar*
+
+ijava.util.Calendar2after(Ljava/lang/Object;)*
+13
+15
+6
+8
+10
+1*ì
+6R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥ ¥(¬ø
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥ ¥('
+%12java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()ÈÊ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¥ ¥((
+%13boolean"-java.util.Calendar#after(Ljava/lang/Object;)Z*
+
+ijava.util.Calendar*
+
+%12java.util.Calendar2after(Ljava/lang/Object;)*	
+3
+5
+1*å
+8R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥, ≥(-ºπ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥, ≥(6
+%10java.util.Calendar")app.Alocacao#getFim()Ljava/util/Calendar;*
+
+aapp.Alocacao2getFim()ÎË
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥, ≥(@
+%11boolean".java.util.Calendar#equals(Ljava/lang/Object;)Z*
+
+%10java.util.Calendar*
+
+fjava.util.Calendar2equals(Ljava/lang/Object;)*
+6
+1*ì
+10R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥ ≥(¡æ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥ ≥(
+%8java.util.Calendar",app.Alocacao#getInicio()Ljava/util/Calendar;*
+
+aapp.Alocacao2getInicio()ÈÊ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≥ ≥((
+%9boolean".java.util.Calendar#equals(Ljava/lang/Object;)Z*
+
+%8java.util.Calendar*
+
+ijava.util.Calendar2equals(Ljava/lang/Object;)*	
+6
+8
+1*µ
+1R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤	 ¥(w"\
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤	 ¥(w
+""*è
+12R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤b ≤(cª∏
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤b ≤(l
+%6java.util.Calendar")app.Alocacao#getFim()Ljava/util/Calendar;*
+
+aapp.Alocacao2getFim()Á‰
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java≤b ≤(u
+%7boolean"-java.util.Calendar#after(Ljava/lang/Object;)Z*
+
+%6java.util.Calendar*
+
+ijava.util.Calendar2after(Ljava/lang/Object;)*
+6
+8
+10
+1:
+aapp.Alocacao:
+ijava.util.Calendar:
+fjava.util.CalendarB"
+	main.Main

@@ -1,0 +1,107 @@
+
+9app.Alocacao#checaMedicoTipoSala(Lapp/Medico;Lapp/Sala;)ZS
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java! !(-"8*·
+2S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java. /(<"]
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java. /(<
+""*Š
+3S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java/ /(®«
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java/ /(#
+%10app.SalaTipo" app.Sala#getTipo()Lapp/SalaTipo;*
+
+salaapp.Sala2	getTipo()z
+x
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java/' /(:
+%11app.SalaTipo"__id*
+""*
+2*‹
+4S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java. .(­ª
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java. .(#
+%8app.SalaTipo" app.Sala#getTipo()Lapp/SalaTipo;*
+
+salaapp.Sala2	getTipo()y
+w
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java.' .(6
+%9app.SalaTipo"__id*
+""*
+2
+3*©
+5S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java- -(ÒÏ
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java- -(&
+%6java.lang.String"/app.Medico#getEspecialidade()Ljava/lang/String;*
+
+responsavel
+app.Medico2getEspecialidade()ñî
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java- -(G
+%7boolean"6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z*
+
+%6java.lang.String*
+neurologista2$equalsIgnoreCase(Ljava/lang/String;)*
+4
+1*µ
+6S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java, ,(ÒÏ
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java, ,(.
+%4java.lang.String"/app.Medico#getEspecialidade()Ljava/lang/String;*
+
+responsavel
+app.Medico2getEspecialidade()ýú
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java, ,([
+%5boolean"6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z*
+
+%4java.lang.String*
+cirurgiao cardiovascular2$equalsIgnoreCase(Ljava/lang/String;)*
+4
+5*â
+7S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java* *(­ª
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java* *("
+%2app.SalaTipo" app.Sala#getTipo()Lapp/SalaTipo;*
+
+salaapp.Sala2	getTipo()y
+w
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java*& *(6
+%3app.SalaTipo"__id*
+"""]
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java* *(8
+""*«
+8S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java) )(ÒÏ
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java) )()
+%0java.lang.String"/app.Medico#getEspecialidade()Ljava/lang/String;*
+
+responsavel
+app.Medico2getEspecialidade()óð
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java) )(L
+%1boolean"6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z*
+
+%0java.lang.String*
+dermatologista2$equalsIgnoreCase(Ljava/lang/String;)*
+6
+7*·
+1S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java1 1("]
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.java1 1(
+"":
+responsavel
+app.Medico:
+salaapp.SalaB"
+app.Alocacao

@@ -1,0 +1,54 @@
+
+,main.Main#inputDouble(DDLjava/lang/String;)DR
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java· ·(%"9*ª
+7R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¼ ¼(7È
+Å
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¼ ¼(7
+%4double"1java.lang.Double#parseDouble(Ljava/lang/String;)D*"
+java.lang.Double*
+
+%3java.lang.String*
+9
+1*µ
+8R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¼ ¼(
+Š
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¼) ¼(+
+%2java.util.Scanner"__id**
+	main.Main"
+inÆÃ
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.java¼) ¼(6
+%3java.lang.String".java.util.Scanner#nextLine()Ljava/lang/String;*
+
+%2java.util.Scanner2
+nextLine()*
+7*Ê
+9R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaº º(
+}
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaº º(
+%0java.io.PrintStream"__id*
+""êç
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaº º(#
+
+%1void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%0java.io.PrintStream*
+
+msgjava.lang.String2println(Ljava/lang/String;)*
+8*µ
+1R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaÄ Ä("\
+R
+FC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/main/Main.javaÄ Ä(
+"":
+"":
+"":
+msgjava.lang.StringB"
+	main.Main

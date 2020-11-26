@@ -1,6 +1,7 @@
-MedicoTest.class
-AlocacaoMedicoTest.class
-AlocacaoTest.class
-SalaTest.class
-AlocacaoMedicoSalaTest.class
+integração\AlocacaoMedicoTest.class
 AlocacaoSalaTest.class
+sonar_cloud\AlocacaoTest.class
+integração\AlocacaoMedicoSalaTest.class
+unitario\AlocacaoTest.class
+unitario\SalaTest.class
+unitario\MedicoTest.class

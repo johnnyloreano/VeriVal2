@@ -1,0 +1,95 @@
+
+app.Alocacao#calcultaCusto()DS
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javab b( "1*·
+1S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javac c("ñ
+ì
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javac c("
+%0java.util.Calendar"__id**
+app.Alocacao"
+iniciop
+n
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javac' c(4	
+%1int"__id*
+""∞≠
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javac c(5	
+%2int"java.util.Calendar#get(I)I*
+
+%0java.util.Calendar*
+	
+%1int2get(I)ñ
+ì
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javac; c(A
+%3java.util.Calendar"__id**
+app.Alocacao"
+iniciop
+n
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javacF c(U	
+%4int"__id*
+""∞≠
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javac; c(V	
+%5int"java.util.Calendar#get(I)I*
+
+%3java.util.Calendar*
+	
+%4int2get(I)ì
+ê
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javad d(
+%6java.util.Calendar"__id**
+app.Alocacao"
+fimp
+n
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javad! d(.	
+%7int"__id*
+""∞≠
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javad d(/	
+%8int"java.util.Calendar#get(I)I*
+
+%6java.util.Calendar*
+	
+%7int2get(I)ì
+ê
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javad5 d(8
+%9java.util.Calendar"__id**
+app.Alocacao"
+fimq
+o
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javad= d(L
+
+%10int"__id*
+""≤Ø
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javad5 d(M
+
+%11int"java.util.Calendar#get(I)I*
+
+%9java.util.Calendar*
+
+
+%10int2get(I)ã
+à
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javae3 e(7
+%12app.Sala"__id**
+app.Alocacao"
+sala§°
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javae3 e(F
+%13double"app.Sala#getCustoPorH()D*
+
+%12app.Sala2getCustoPorH()"]
+S
+IC:/Users/John Peter/Desktop/VeriVal2/Java/src/main/java/app/Alocacao.javae e(G
+""B
+app.Alocacao
