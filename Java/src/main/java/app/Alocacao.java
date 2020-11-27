@@ -103,9 +103,7 @@ public class Alocacao {
     public double getCusto(){
         return custo;
     }
-    public void alteraCusto(){
-        custo=calcultaCusto();
-    }
+    public void alteraCusto(){ custo=calcultaCusto(); }
 
     @Override
     public String toString(){

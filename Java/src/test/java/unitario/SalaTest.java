@@ -4,9 +4,14 @@ import app.Sala;
 import app.SalaTipo;
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import static junit.framework.TestCase.assertEquals;
 public class SalaTest {
     private static Sala sala;
+    private final PrintStream standardOut = System.out;
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
     @Test
     public void getNomeTest() {
         Sala sala = new Sala("Gama",SalaTipo.GRANDE);
@@ -22,6 +27,13 @@ public class SalaTest {
     }
 
     @Test
+    public void getTipoTest2() {
+        Sala sala = new Sala("Gama",SalaTipo.ALTO_RISCO);
+
+        assertEquals(SalaTipo.ALTO_RISCO,sala.getTipo());
+    }
+
+    @Test
     public void validaTempoMinimoGrandeTest() {
         sala=new Sala("Gama",SalaTipo.GRANDE);
 
@@ -30,7 +42,7 @@ public class SalaTest {
 
     @Test
     public void validaTempoMinimoPequenaTest() {
-        sala=new Sala("Gama",SalaTipo.GRANDE);
+        sala=new Sala("Gama",SalaTipo.PEQUENA);
 
         assertEquals(2, sala.getTempoMinimoReservaH());
     }
@@ -119,6 +131,21 @@ public class SalaTest {
 
         assertEquals(3000.0,sala.getCustoPorH());
     }
+
+    @Test
+    public void getCustoPorHTest() {
+        Sala sala = new Sala("Gama", SalaTipo.ALTO_RISCO);
+
+        assertEquals(1200.0,sala.getCustoPorH());
+    }
+
+    @Test
+    public void getCustoPorHTest2() {
+        Sala sala = new Sala("Gama", null);
+
+        assertEquals(0.0,sala.getCustoPorH());
+    }
+
 
     @Test
     public void toStringTest() {

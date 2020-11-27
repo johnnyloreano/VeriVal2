@@ -9,8 +9,7 @@ import org.junit.Test;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import static junit.framework.TestCase.assertFalse;
-import static junit.framework.TestCase.assertTrue;
+import static junit.framework.TestCase.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -125,6 +124,26 @@ public class AlocacaoTest {
         when(sala.getTipo()).thenReturn(SalaTipo.GRANDE);
 
         assertTrue(Alocacao.checaMedicoTipoSala(medico,sala));
+    }
+
+    @Test
+    public void checaMedicoTipoSalaTest10() {
+        sala=mock(Sala.class);
+        when(sala.getTipo()).thenReturn(SalaTipo.PEQUENA);
+        medico=mock(Medico.class);
+        when(medico.getEspecialidade()).thenReturn("Ginecologista");
+
+        assertTrue(Alocacao.checaMedicoTipoSala(medico,sala));
+    }
+
+    @Test
+    public void checaMedicoTipoSalaTest11() {
+        sala=mock(Sala.class);
+        when(sala.getTipo()).thenReturn(null);
+        medico=mock(Medico.class);
+        when(medico.getEspecialidade()).thenReturn("Neurologista");
+
+        assertFalse(Alocacao.checaMedicoTipoSala(medico,sala));
     }
 
     @Test
@@ -257,10 +276,6 @@ public class AlocacaoTest {
         assertTrue(Alocacao.checaHorarioMinMax(inicio,fim));
     }
 
-    @Test
-    public void alteraCustoTest(){
-
-    }
 }
 
 
